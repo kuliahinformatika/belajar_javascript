@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="judul">Judul Saat Ini</h1>
+    <button onclick="ubahJudul()">Ubah Judul</button>
+    <script>
+        function ubahJudul (){
+            let judulBaru = prompt("Masukkan Judul Baru");
+            if (judulBaru !== null && judulBaru !== ""){
+            document.getElementById("judul").innerHTML = judulBaru
+            }
+        }
+    </script>
+</body>
+</html>
