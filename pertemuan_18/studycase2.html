@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="judul">Judul Lama</h1>
+    <button onclick="ubahJudul()">Ganti Judul lur</button>
+    <script>
+        function ubahJudul() {
+    let judulBaru;
+
+    while (true) {
+        judulBaru = prompt("Masukkan Judul Baru");
+
+        if (judulBaru === null) break;
+        if (judulBaru.trim() === "") {
+            alert("Judul wajib diisi!");
+            continue;
+        }
+
+        document.getElementById("judul").innerHTML = judulBaru;
+        break;
+    }
+}
+
+    </script>
+</body>
+</html>
