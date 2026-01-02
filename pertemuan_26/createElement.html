@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="about"></section>
+    <button onclick="tambah()">Tambah</button>
+
+
+    <script>
+        function tambah (){
+            let aboutSection = document.getElementById("about");
+        let heading = document.createElement("h2");
+        heading.textContent = "Tentang Kami";
+
+        let paragraf = document.createElement("p");
+        paragraf.textContent = "Dalam video ini, Anda akan belajar cara menggunakan method createElement di JavaScript untuk membuat dan menambahkan elemen HTML secara dinamis ke dalam halaman web. Materi ini sangat penting bagi Anda yang sedang belajar JavaScript dari nol, khususnya bagi belajar JavaScript pemula yang ingin memahami belajar dasar JavaScript dan cara kerja manipulasi DOM. Method createElement memungkinkan Anda membuat elemen seperti div, p, button, dan elemen HTML lainnya langsung dari JavaScript, lalu menyisipkannya ke dalam dokumen menggunakan appendChild atau insertBefore. Video ini sangat cocok untuk Anda yang ingin memperkuat pemahaman tentang manipulasi elemen DOM secara dinamis dalam JavaScript.0"
+
+        aboutSection.append(heading, paragraf);
+        }
+        
+                        
+    </script>
+</body>
+</html>
