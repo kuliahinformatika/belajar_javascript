@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .img-fix{
+            width: 1080px;
+            height: 1080px;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="gambar" src="1.png" alt="gambar_1" class="img-fix">
+    <br>
+    <br>
+    <button onclick="gantigambar()">Ganti Gambar</button>
+
+    <script>
+        status = true;
+        function gantigambar(){
+        gambar.src = status ? "2.png" : "1.png";
+        status = !status;
+        }
+    </script>
+</body>
+</html>
