@@ -22,8 +22,10 @@
     <button onclick="gantigambar()">Ganti Gambar</button>
 
     <script>
-        status = true;
+        let status = true;
+
         function gantigambar(){
+        let gambar = document.getElementById("gambar")
         gambar.src = status ? "2.png" : "1.png";
         status = !status;
         }
