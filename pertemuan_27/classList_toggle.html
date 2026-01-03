@@ -15,10 +15,14 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Selamat Datang</p>
-    <button>Sembunyikan/Tampilkan</button>
+    <p id="paragraf">Selamat Datang</p>
+    <button onclick="tampil()">Sembunyikan/Tampilkan</button>
 
     <script>
+        function tampil (){
+            let paragraf = document.getElementById("paragraf");
+        paragraf.classList.toggle("hidden");
+        }
         
     </script>
 </body>
