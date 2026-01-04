@@ -1,0 +1,13 @@
+.container {
+    width: 400px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.reade-more-btn {
+    color: blue;
+    cursor: pointer;
+}
