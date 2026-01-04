@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form Input</h2>
+
+    <form>
+        <input type="text" id="name" placeholder="Masukkan Nama">
+        <br><br>
+        <input type="text" id="addres" placeholder="Masukkan Alamat">
+    </form>
+
+    <h3>Hasil Input</h3>
+    <p>Nama: <span id="output-name"></span></p>
+    <p>Alamat: <span id="output-addres"></span></p>
+
+    <script>
+        //Ambil element input dan output
+        let nameInput = document.getElementById("name");
+        let addresInput = document.getElementById("addres");
+        let nameOutput = document.getElementById("output-name");
+        let addresOutput = document.getElementById("output-addres");
+
+        //tambahkan even untuk menangani input nama
+        nameInput.addEventListener("input", function (){
+            nameOutput.innerText = nameInput.value
+        });
+
+        //tambahkan even untuk menangani input alamat
+        addresInput.addEventListener("input", function (){
+            addresOutput.innerText = addresInput.value
+        });
+    </script>
+</body>
+</html>
