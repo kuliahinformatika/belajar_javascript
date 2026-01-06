@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p id="hasil"></p>
+    <script>
+        let waktuSekarang = new Date();
+        let hasil = document.getElementById("hasil");
+        let awal = new Date("oct 2, 2025");
+        let akhir = new Date("oct 5, 2025");
+
+        let selisih = akhir.getTime() - awal.getTime();
+        let hari = selisih / (1000 * 60 * 60 * 24);
+
+        hasil.textContent = `Selisih hari ${hari}`;
+    </script>
+</body>
+</html>
