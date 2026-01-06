@@ -20,8 +20,13 @@
         function tampilkanHitung(){
             hitung++
             hasil.textContent = hitung;
+
+            if(hitung === 5){
+                clearInterval(timer);
+                document.getElementById("hasil").innerText = "Hitungan Selesai!"
+            }
         }
-        let timer = setInterval(tampilkanHitung,2000);
+        let timer = setInterval(tampilkanHitung,1000);
     </script>
 </body>
 </html>
