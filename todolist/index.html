@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <H2>Todo List APPS</H2>
+        <input type="text" id="input" placeholder="Masukkan Tulisan Mu!!">
+        <button id="button" onclick="add()">ADD</button>
+
+        <ul id="list">
+
+        </ul>
+    </div>
+
+    <div class="model" id="edit">
+        <div class="model-content">
+            <h3>Edit Model</h3>
+            <input type="text" id="edit-task-input">
+            <button class="save-modal-btn" onclick="saveTask()">Save</button>
+            <button class="close-modal-btn" onclick="closeModel()">Cencel</button>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
